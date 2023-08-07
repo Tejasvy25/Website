@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    
+
+<video autoplay  loop id="myVideo">
+  <source src="vid.mp4" type="video/mp4">
+  
+</video>
+
+
+<div class="content">
+    <center>
+  <h1>EVENT MANAGEMENT VS PLANNING</h1>
+  <h1>Creating Unforgettable Memories</h1>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <nav>
+    <a href="index.html">Home</a>
+      </nav>
+</center>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
